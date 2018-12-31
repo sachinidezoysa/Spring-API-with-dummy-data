@@ -69,10 +69,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private static List<Employee> populateDummyEmployees(){
         List<Employee> employees = new ArrayList<Employee>();
-        employees.add(new Employee(counter.incrementAndGet(),"Sam",30, 70000));
-        employees.add(new Employee(counter.incrementAndGet(),"Tom",40, 50000));
-        employees.add(new Employee(counter.incrementAndGet(),"Jerome",45, 30000));
-        employees.add(new Employee(counter.incrementAndGet(),"Silvia",50, 40000));
+        employees.add(new Employee(counter.incrementAndGet(),"Sam", "Galle", "Mr.", "abc@g.com", "xyz", "dubai", "80300", "958100574v", "7474jk", "sdlkfs", "0916543403", "0719546329", "0436983257"));
+        employees.add(new Employee(counter.incrementAndGet(), "Tom","Galle", "Mr.", "abc@g.com", "xyz", "dubai", "80300", "958100574v", "7474jk", "sdlkfs", "0916543403", "0719546329", "0436983257"));
+        employees.add(new Employee(counter.incrementAndGet(),"Jerome","Galle", "Mr.", "abc@g.com", "xyz", "dubai", "80300", "958100574v", "7474jk", "sdlkfs", "0916543403", "0719546329", "0436983257"));
+        employees.add(new Employee(counter.incrementAndGet(),"Silvia","Galle", "Mr.", "abc@g.com", "xyz", "dubai", "80300", "958100574v", "7474jk", "sdlkfs", "0916543403", "0719546329", "0436983257"));
         return employees;
     }
 

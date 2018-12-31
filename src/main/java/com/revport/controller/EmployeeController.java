@@ -84,8 +84,17 @@ public class EmployeeController {
         }
 
         currentEmployee.setName(employee.getName());
-        currentEmployee.setAge(employee.getAge());
-        currentEmployee.setSalary(employee.getSalary());
+        currentEmployee.setCity(employee.getCity());
+        currentEmployee.setTitle(employee.getTitle());
+        currentEmployee.setEmail(employee.getEmail());
+        currentEmployee.setAddress(employee.getAddress());
+        currentEmployee.setCountry(employee.getCountry());
+        currentEmployee.setZipcode(employee.getZipcode());
+        currentEmployee.setCompanyID(employee.getCompanyID());
+        currentEmployee.setDesignation(employee.getDesignation());
+        currentEmployee.setHomeContactNumber(employee.getHomeContactNumber());
+        currentEmployee.setMobileContactNumber(employee.getMobileContactNumber());
+        currentEmployee.setOfficeContactNumber(employee.getOfficeContactNumber());
 
         employeeService.updateEmployee(currentEmployee);
         return new ResponseEntity<Employee>(currentEmployee, HttpStatus.OK);
